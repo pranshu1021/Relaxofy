@@ -88,5 +88,28 @@ body{
         font-size: 14px; /* Adjust font size for readability */
         max-width: 95vw; /* Increase maximum width on smaller screens */
     }
+    .p1{
+   
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 50px;
+        color: gold;
+    
+        
+    }
+    .p2{
+        font-size: 30px;
+        left:1px;
+        text-align: left;
+    }
+    .p3{
+        font-size: 22px;
+        left:1px;
+        text-align: left;
+    }
+    .p4{
+        font-size: 21px;
+        left:1px;
+        text-align: left;
+    }
     
 }
