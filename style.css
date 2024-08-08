@@ -10,9 +10,15 @@
     font-family: "Pacifico", cursive;
   
 }
+html, body{
+    overflow: auto;
+}
 body{
     background-color: #4c6c77;
 
+}
+.divtitle{
+    background-color: rgba(0, 0, 0, 0.1);
 }
 .background{
     width: 100%;
@@ -38,7 +44,7 @@ body{
 }
 .content{
     position: fixed; /* Fixed positioning to stick to the viewport */
-    top: 50%;
+    top: 69%;
     left: 3%;
     transform: translateY(-50%); /* Center vertically */
     background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
