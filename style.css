@@ -7,6 +7,7 @@
     1px -1px 0 #000,  
     -1px 1px 0 #000,  
     1px 1px 0 #000; 
+    font-family: "Pacifico", cursive;
   
 }
 body{
@@ -49,6 +50,32 @@ body{
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
     z-index: 1; /* Ensure it appears above the video */
 }
+
+  
+.p1{
+   
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 50px;
+    color: gold;
+
+    
+}
+.p2{
+    font-size: 30px;
+    left:1px;
+    text-align: left;
+}
+.p3{
+    font-size: 21px;
+    left:1px;
+    text-align: left;
+}
+.p4{
+    font-size: 21px;
+    left:1px;
+    text-align: left;
+}
+
 /* Responsive adjustments */
 @media (max-width: 600px) {
     .video-background video {
@@ -61,4 +88,5 @@ body{
         font-size: 14px; /* Adjust font size for readability */
         max-width: 95vw; /* Increase maximum width on smaller screens */
     }
+    
 }
