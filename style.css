@@ -1,4 +1,4 @@
-.Title{
+.logobutton{
     color: rgb(255, 255, 255);
     font-size: 55px;
     padding-left: 5%;
@@ -8,39 +8,75 @@
     -1px 1px 0 #000,  
     1px 1px 0 #000; 
     font-family: "Pacifico", cursive;
+    text-decoration: none;
   
 }
 body{
     background-color: #4c6c77;
+    overflow-x: hidden;
 
 }
 .divtitle{
-    background-color: rgba(0, 0, 0, 0.1);
+    
+    position: absolute; /* Absolute positioning for overlapping */
+    top: 20px; /* 20px from top */
+    left: 5%; /* 5% from left */
+    z-index: 2; /* Higher z-index to bring above the video */
+    background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Padding inside container */
+    text-align: left; /* Center align text */
+    width: 100vw;
+   
+    height: 85px;
+
 }
-.background{
-    width: 100%;
-    height: 100%;
+.nav1{
+    z-index: 3;
+}
+
+.logobutton{
+    background-color: rgb(219, 110, 0,0);
+    border: none;
+    
+}
+.logobutton:hover{
+    
+    border: none;
+    
+  
+    
 }
 .videobackground{
-    position: absolute;
+    position: fixed; /* Fixed positioning to ensure full coverage */
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    z-index: -1; /* Place it behind other content */
+    width: 100vw; /* Full width of viewport */
+    height: 100vh; /* Full height of viewport */
+    overflow: hidden; /* Hide overflow */
+    z-index: 1; /* Lower z-index to place behind content */
 }
+
+
+
 .videobackground video{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover; /* Ensure the video covers the entire area */
-    transform: translate(-50%, -50%);
+    position: relative; /* Absolute positioning for centering */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    width: 100vw; /* Full width of viewport */
+    height: 100vh; /* Full height of viewport */
+    object-fit: cover; /* Cover full container */
+    transform: translate(-50%, -50%); /* Centering using transform */
+    z-index: -1;
+    overflow: hidden;
 }
+
+
+
+
+
 .content{
-    position: fixed; /* Fixed positioning to stick to the viewport */
+    position: absolute; /* Fixed positioning to stick to the viewport */
     top: 60%;
     left: 3%;
     transform: translateY(-50%); /* Center vertically */
@@ -52,8 +88,25 @@ body{
     max-width: 90vw; /* Maximum width to prevent overflow */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
     z-index: 1; /* Ensure it appears above the video */
+    display: block;
 }
 
+.content2{
+
+    position: absolute; /* Fixed positioning to stick to the viewport */
+    top: 1300px;
+    left: 3%;
+    transform: translateY(-50%); /* Center vertically */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+    color: white;
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners (optional) */
+    text-align: center;
+    max-width: 90vw; /* Maximum width to prevent overflow */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    z-index: 1; /* Ensure it appears above the video */
+    display: block;
+}
   
 .p1{
    
@@ -78,6 +131,68 @@ body{
     left:1px;
     text-align: left;
 }
+.p5{
+    display: inline-block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: chocolate;
+    font-size: 35px;
+
+
+}
+/*
+.videobackground1{
+    padding-top: 81%;
+
+
+    
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1; 
+}*/
+
+.part2{
+
+    z-index: 1;
+    display: inline;
+}
+.part2img{
+    z-index: 1;
+   overflow: hidden;
+   display: block;
+}
+
+.home{
+    text-decoration: none;
+    font-size: 30px;
+    color: whitesmoke;
+
+}
+.about{
+    text-decoration: none;
+    font-size: 30px;
+    color: whitesmoke;
+
+}
+.types{
+
+    text-decoration: none;
+    font-size: 30px;
+    color: whitesmoke;
+}
+.login{
+    text-decoration: none;
+    font-size: 30px;
+    color: whitesmoke;
+
+}
+
+
+
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
@@ -86,7 +201,7 @@ body{
         object-fit: cover; /* Ensure proper scaling */
     }
     .content{
-    position: fixed; /* Fixed positioning to stick to the viewport */
+    position: absolute; /* Fixed positioning to stick to the viewport */
     top: 50%;
     left: 3%;
     transform: translateY(-50%); /* Center vertically */
@@ -128,5 +243,44 @@ body{
         left:1px;
         text-align: left;
     }
+    
+    .logobutton{
+        color: rgb(255, 255, 255);
+        font-size: 55px;
+        padding-left: 5%;
+        text-shadow: 
+        -4px -3px 0 #000,  
+        1px -1px 0 #000,  
+        -1px 1px 0 #000,  
+        1px 1px 0 #000; 
+        font-family: "Pacifico", cursive;
+        text-decoration: none;
+        text-align: top;
+      
+    }
+    .part2img{
+        z-index: 1;
+       overflow: hidden;
+       display: block;
+       width: 400px;
+       height: 500px;
+    }
+    .content2{
+
+        position: absolute; /* Fixed positioning to stick to the viewport */
+        top: 1000px;
+        left: 3%;
+        transform: translateY(-50%); /* Center vertically */
+        background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+        color: white;
+        padding: 30px;
+        border-radius: 10px; /* Rounded corners (optional) */
+        text-align: center;
+        max-width: 90vw; /* Maximum width to prevent overflow */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        z-index: 1; /* Ensure it appears above the video */
+        display: block;
+    }
+      
     
 }
